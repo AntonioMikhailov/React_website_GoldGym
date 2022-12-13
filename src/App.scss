@@ -1,0 +1,26 @@
+@import './assets/css/params.scss';
+// // компоненты-Шаблоны сначала ставим
+@import './components/Header/Header.scss';
+@import './components/BreadCrumbsNav/BreadCrumbsNav.scss';
+@import './components/ButtonRed/ButtonRed.scss';
+@import './components/AnchorButton/AnchorButton.scss';
+@import './components/ChatPopUp/ChatPopUp.scss';
+
+ 
+ // страницы по отдельности
+@import './pages/Home/Home.scss';
+@import './pages/Sections/Sections.scss';
+ @import './pages/Coaches/Coaches.scss';
+@import './pages/Blogs/Blogs.scss';
+@import './pages/Contacts/Contacts.scss';
+@import './pages/CoachesSingle/CoachesSingle.scss';
+@import './pages/BlogsSingle/BlogsSingle.scss';
+ 
+ // footer
+ @import './components/SpecialOffer/SpecialOffer.scss';
+@import './components/Footer/Footer.scss';
+
+ 
+
+
+ 

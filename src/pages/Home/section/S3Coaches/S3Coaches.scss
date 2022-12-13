@@ -1,0 +1,145 @@
+.h-three {
+	padding:180px 0px 80px 0px;
+}
+.h-three__title {
+	text-align:center;
+}
+.title-h1 {
+}
+.h-three__line {
+}
+.line {
+}
+.h-three__row {
+	display:flex;
+	flex-wrap:wrap;
+	margin:60px 0px 0px 0px;
+}
+.h-three__item {
+	position:relative;
+	flex-basis:50%;
+	display:flex;
+	transition:all 0.3s ease .0s;
+}
+.h-three__item::before {
+	content:'';
+	position:absolute;
+	top:0;
+	width:100%;
+	border-top:5px solid rgba(219,7,7,0);
+	transition:all 0.3s ease .0s;
+}
+.h-three__item:hover:before {
+	border-top:5px solid rgb(219,7,7);
+}
+.h-three-i__left {
+	flex-basis:30%;
+}
+.h-three-i__left img {
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+.h-three-i__right {
+	flex-basis:70%;
+	padding:40px 10px 20px 40px;
+	background:linear-gradient(0deg, $deepBlack,#414248);
+}
+.h-three-i-r__title {
+	display:block;
+	font-size:18px;
+	font-family:h;
+	text-transform:uppercase;
+	margin:0px 0px 10px 0px;
+	transition:all 0.3s ease .0s;
+}
+.h-three-i-r__title:hover {
+	color:$red;
+}
+.h-three-i-r__subtitle {
+	font-size:12px;
+	font-family:h;
+	text-transform:uppercase;
+	color:$red;
+}
+.h-three-i-r__text {
+	display:block;
+	margin:10px 0px 20px 0px;
+	color:#d1d1d1;
+	transition:all 0.3s ease .0s;
+	font-size:16px;
+}
+.h-three-i-r__text:hover {
+	color:#ffffff;
+}
+.h-three-i-r__socialRow {
+	display:flex;
+}
+.h-three-i-r__socialItem img {
+	width:25px;
+	margin:0px 10px 0px 0px;
+}
+@media screen and (max-width:1500px) {
+	.h-three {
+	padding:80px 0px 60px 0px;
+}
+.h-three-i__left {
+	flex-basis:40%;
+}
+.h-three-i__right {
+	flex-basis:60%;
+}
+}
+@media screen and (max-width:1250px) {
+	.h-three-i__left {
+	flex-basis:50%;
+}
+.h-three-i__right {
+	flex-basis:50%;
+	padding:30px 10px 20px 20px;
+}
+}
+@media screen and (max-width:1250px) {
+	.h-three__item {
+	flex-basis:100%;
+}
+.h-three-i__left {
+	flex-basis:20%;
+}
+.h-three-i__left img {
+	min-width:250px;
+	height:100%;
+	object-fit:cover;
+}
+.h-three-i__right {
+	flex-basis:80%;
+	padding:50px 10px 20px 60px;
+}
+}
+@media screen and (max-width:768px) {
+	.h-three {
+	padding:60px 0px 40px 0px;
+}
+.h-three__row {
+	margin:40px 0px 0px 0px;
+}
+.h-three-i__right {
+	padding:20px 10px 20px 20px;
+}
+}
+@media screen and (max-width:550px) {
+	.h-three {
+	padding:40px 0px 0px 0px;
+}
+.h-three__row {
+	margin:30px 0px 0px 0px;
+}
+.h-three__item {
+	display:flex;
+	flex-direction:column;
+	margin:0px 0px 30px 0px;
+}
+.h-three-i__right {
+	padding:20px 10px 20px 20px;
+}
+}

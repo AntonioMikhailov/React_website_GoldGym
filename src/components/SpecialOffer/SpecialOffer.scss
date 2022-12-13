@@ -1,0 +1,146 @@
+.special-offer {
+	padding:100px 0px 120px 0px;
+	background-color:rgb(0,0,0);
+	margin:60px 0px 0px 0px;
+}
+.special-offer__row {
+	padding:0px 20px 0px 20px;
+}
+.special-offer__title {
+	text-align:center;
+}
+.title-h1 {
+}
+.special-offer__subtitle {
+	text-align:center;
+	font-family:h;
+	text-transform:uppercase;
+	font-size:18px;
+	color:$red;
+	margin:20px 0px 0px 0px;
+}
+.special-offer__formRow {
+	margin:0 auto;
+	display:flex;
+	max-width:900px;
+	margin-top:40px;
+}
+input.special-offer__input {
+	height:50px;
+	flex-basis:60%;
+	border-radius:0px;
+	border:0px solid rgb(122,122,122);
+	padding-left:10px;
+	color:#000;
+	background-color:#fff;
+}
+input.special-offer__input:focus::placeholder {
+	color:transparent;
+}
+.special-offer__input::placeholder {
+	color:$red;
+	font-size:14px;
+}
+.special-offer__button {
+	height:50px;
+
+ flex-basis:40%;
+	font-size:18px;
+}
+.special-offer__bottomTitle {
+	text-align:center;
+	margin:100px 0px 0px 0px;
+}
+.special-offer__socialRow {
+	display:flex;
+	justify-content:center;
+	width:100%;
+	margin:40px 0px 0px 0px;
+  gap: 20px;
+}
+
+//Icons Font
+.special-offer-soc__item {
+  width: 40px;
+  height: 40px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: s;
+  font-size: 20px;
+  transition: all 0.3s ease .0s;
+
+  border:  1px solid #7a7a7a;
+  border-radius: 50%;
+  }
+.special-offer-soc__item:hover {
+  color: $red;
+  border:  1px solid $red;
+}
+ 
+
+.header-social__item {
+  width: 35px;
+  height: 35px;
+  border:  1px solid rgba(255, 255, 255, 0);
+
+}
+.header-social__item:hover {
+ 
+  color: $red;
+  background-color: #fff;
+  border:  1px solid white;
+}
+@media screen and (max-width:768px) {
+	.special-offer {
+	padding:60px 0px 60px 0px;
+	background-color:rgb(0,0,0);
+	margin:60px 0px 0px 0px;
+}
+.special-offer__subtitle {
+	font-size:14px;
+	margin:20px 0px 0px 0px;
+}
+.special-offer__bottomTitle {
+	margin:50px 0px 0px 0px;
+}
+.special-offer__button {
+	height:50px;
+	flex-basis:40%;
+	font-size:14px;
+}
+.special-offer__socialRow {
+	margin:20px 0px 0px 0px;
+}
+input.special-offer__input,.special-offer__button {
+	height:40px;
+}
+}
+@media screen and (max-width:500px) {
+	.special-offer {
+	padding:40px 0px 40px 0px;
+	margin:40px 0px 0px 0px;
+}
+.special-offer__subtitle {
+	font-size:12px;
+	margin:20px 0px 0px 0px;
+}
+.special-offer__bottomTitle {
+	margin:40px 0px 0px 0px;
+}
+.special-offer__button {
+	flex-basis:60%;
+	font-size:12px;
+}
+.special-offer__socialRow {
+	margin:20px 0px 0px 0px;
+}
+}
+@media screen and (max-width:400px) {
+	input.special-offer__input,.special-offer__button {
+	height:30px;
+  font-size:10px;
+}
+}

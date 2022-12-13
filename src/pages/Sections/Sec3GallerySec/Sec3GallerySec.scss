@@ -1,0 +1,150 @@
+.sec-gallery {
+	padding:60px 0px 40px 0px;
+}
+.sec-gallery__title {
+	text-align:center;
+}
+.carousel-preview__row {
+	display:flex;
+	flex-wrap:wrap;
+	margin:0 -10px;
+	margin-top:60px;
+}
+.carousel-preview__columns {
+	box-sizing:border-box;
+	padding:0 10px;
+	margin:0px 0px 20px 0px;
+	cursor:pointer;
+	flex-basis:25%;
+}
+.carousel-preview-item {
+	position:relative;
+}
+.carousel-preview-item::before {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#00000098;
+	opacity:0;
+	transition:all .3s ease}
+.carousel-preview__image img {
+	display:block;
+	object-fit:cover;
+
+ width:100%;
+}
+.carousel-preview__icon {
+	position:absolute;
+	top:calc(50% - 20px);
+	left:calc(50% - 20px);
+	opacity:0;
+	cursor:pointer;
+	transition:all 0.3s ease;
+}
+.carousel-preview__columns:hover .carousel-preview-item::before {
+	opacity:1;
+}
+.carousel-preview__columns:hover .carousel-preview__icon {
+	opacity:1;
+}
+.carousel-container {
+  position:fixed;
+	top:0;
+	left:0;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:100%;
+	opacity:0;
+	visibility:hidden;
+	transition:all .3s ease .0s;
+	z-index:21;
+
+}
+.carousel-wrapper {
+ 
+}
+.show-carousel {
+	visibility:visible;
+	opacity:1;
+	background-color:#000000ec;
+}
+.carousel-main {
+	position:relative;
+  max-width:900px; //  
+
+}
+ 
+.slider-image {
+	 
+  text-align:center;
+	font-size:30px;
+	color:rgb(192,192,192);
+	font-size:50px;
+}
+.slider-image img {
+	width:100%;
+	height:100%;
+  object-fit:cover;
+}
+.buttons-row {
+	position:relative;
+	width:30px;
+ margin:0px auto;
+ 
+}
+.button-prev {
+}
+.button-prev img,.button-next img {
+	width:50px;
+
+ cursor:pointer;
+}
+.carousel-cancelBtn img {
+	width:30px;
+	cursor:pointer;
+
+}
+@media screen and (max-width:1100px) {
+	.sec-gallery {
+	padding:20px 0px 0px 0px;
+}
+}
+@media screen and (max-width: 900px) {  
+  .carousel-main, .slick-slide {  
+  max-width:600px;  
+  
+  }
+  }
+
+@media screen and (max-width:768px) {
+	.carousel-preview__row {
+	margin:0 -5px;
+	margin-top:40px;
+}
+.carousel-preview__columns {
+	padding:0 5px;
+	flex-basis:50%;
+	margin:0px 0px 10px 0px;
+}
+}
+
+@media screen and (max-width: 600px) {  
+  .carousel-main, .slick-slide {  
+  max-width:400px;  
+  
+  }
+  }
+@media screen and (max-width:500px) {
+	.sec-gallery {
+	padding:40px 0px 0px 0px;
+}
+.carousel-preview__row {
+	margin-top:30px;
+}
+}

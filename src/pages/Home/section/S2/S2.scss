@@ -1,0 +1,113 @@
+.h-two {
+	padding:180px 0px 0px 0px;
+}
+.h-two__title {
+	text-align:center;
+}
+ 
+.h-two__row {
+	display:flex;
+	margin:80px 0px 0px 0px;
+	background-color:rgb(0,0,0);
+	padding:0px 0px 20px 0px;
+}
+.h-two__item {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	flex-grow:1;
+	padding:50px 0px 30px 0px;
+	border-top:5px solid #000000;
+	transition:all 0.3s ease .0s;
+}
+.h-two__item:hover {
+	border-top:5px solid $red;
+}
+.h-two-i__title {
+	text-align:center;
+}
+.h-two-i__image {
+ margin:0px 0px 40px 0px;
+}
+.h-two-i__image img {
+	margin:0 auto;
+	display:block;
+	width:70%;
+	object-fit:cover;
+}
+ 
+@media screen and (max-width:1700px) {
+	.h-two {
+	padding:100px 0px 0px 0px;
+}
+}
+@media screen and (max-width:1200px) {
+	.h-two {
+	padding:80px 0px 0px 0px;
+}
+.h-two__row {
+	margin:40px 0px 0px 0px;
+	padding:0px 0px 20px 0px;
+}
+.btn-white {
+	width:200px;
+	height:40px;
+	font-size:14px;
+}
+}
+@media screen and (max-width:900px) {
+	.h-two {
+	padding:50px 0px 0px 0px;
+}
+.h-two__item {
+	padding:30px 0px 10px 0px;
+}
+.btn-white {
+	width:150px;
+	height:30px;
+	font-size:10px;
+}
+.h-two-i__image {
+	margin:0px 0px 20px 0px;
+}
+}
+@media screen and (max-width:768px) {
+	.h-two {
+	padding:50px 0px 0px 0px;
+}
+.h-two__row {
+	display:flex;
+	flex-wrap:wrap;
+}
+.h-two__item {
+	padding:20px 0px 10px 0px;
+	flex-basis:50%;
+	margin:0px 0px 40px 0px;
+}
+.btn-white {
+	width:150px;
+	height:30px;
+	font-size:10px;
+}
+}
+@media screen and (max-width:400px) {
+	.h-two {
+	padding:40px 0px 0px 0px;
+}
+.h-two__row {
+	margin:20px 0px 0px 0px;
+}
+.h-two-i__title {
+	font-size:18px;
+}
+.h-two__item {
+	padding:20px 0px 10px 0px;
+	flex-basis:100%;
+	margin:0px 0px 20px 0px;
+}
+.btn-white {
+	width:180px;
+	height:40px;
+	font-size:12px;
+}
+}

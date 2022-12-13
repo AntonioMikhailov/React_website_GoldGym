@@ -1,0 +1,36 @@
+
+
+.btn-red {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:252px;
+	height:60px;
+	background-color:$red;
+	font-family:b;
+	font-size:18px;
+	text-transform:uppercase;
+	transition:all 0.3s ease .0s;
+	color:rgb(255,255,255);
+}
+.btn-red:hover {
+	background-color:#fff;
+	color:#2B2E35;
+}
+
+@media screen and (max-width: 768px) { 
+  .btn-red {
+    width:200px;
+    height:40px;
+    font-size:12px;
+  } 
+ 
+  }
+  @media screen and (max-width:400px) {  
+    .btn-red {
+      width:150px;
+      height:34px;
+      font-size:10px;
+    }
+   
+    }
